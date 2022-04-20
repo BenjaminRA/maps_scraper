@@ -4,7 +4,7 @@ import prompt from 'prompt-sync'
 // const place = 'High Line' // 25 hours
 // const place = 'Statue of Liberty National Monument, Nueva York, EE. UU.' // 2 hours
 const place = prompt()('Enter a place: ')
-const language = prompt()('Enter a language in the format listed by google (https://sites.google.com/site/tomihasa/google-language-codes): ')
+const language = prompt()('Enter a language in a format listed by google (https://sites.google.com/site/tomihasa/google-language-codes): ')
 const URL = `https://www.google.cl/search?q=${place}&tbm=map&hl=${language}`
 
 const get_avg_time_spent = (avg_time_spent) => {
@@ -63,3 +63,6 @@ const main = async () => {
 }
 
 main()
+
+// https://lh5.googleusercontent.com/p/AF1QipNJzIOJjrqQY0vl9OieB8K1VWRsMJOvN-_Q4psZ=w60-h80-n-k-no -> https://lh5.googleusercontent.com/p/AF1QipNJzIOJjrqQY0vl9OieB8K1VWRsMJOvN-_Q4psZ=s4096-k-no
+// se configura el tamaño de la imagen con el parametro s4096-k-no, donde el numero despues de s correponde al factor de escalado
